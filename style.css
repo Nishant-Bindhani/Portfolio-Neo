@@ -516,7 +516,7 @@ about-content p {
 
 /* contact--- */
 
-.contact {
+#contact {
     background: var(--secon-bg-color);
     width: 100%;
 }
@@ -698,8 +698,8 @@ footer a {
         font-size: .82rem;
     }
 
-    #contact{
-        max-height: 200vh;
+    .contact{
+        height: 75vh;
     }
     footer {
         font-size: .5rem;
