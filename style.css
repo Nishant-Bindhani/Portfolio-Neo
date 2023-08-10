@@ -386,22 +386,22 @@ about-content p {
 
 .skill-bar .bar .html {
     width: 70%;
-    animation: html 2s;
+    animation: html 11s;
 }
 
 .skill-bar .bar .css {
     width: 60%;
-    animation: css 3s;
+    animation: css 11.5s;
 }
 
 .skill-bar .bar .javascript {
     width: 40%;
-    animation: javascript 4s;
+    animation: javascript 12s;
 }
 
 .skill-bar .bar .cpp {
-    width: 50%;
-    animation: cpp 5s;
+    width: 60%;
+    animation: cpp 11.5s;
 }
 
 
@@ -738,6 +738,6 @@ footer a {
         width: 0%
     }
     100% {
-        width: 50%
+        width: 60%
     }
 }
