@@ -697,6 +697,10 @@ footer a {
     .filter-buttons .btn {
         font-size: .82rem;
     }
+
+    #contact{
+        max-height: 200vh;
+    }
     footer {
         font-size: .5rem;
     }
