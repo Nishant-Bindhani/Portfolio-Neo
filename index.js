@@ -23,7 +23,7 @@ let section = document.querySelectorAll('section');
 
 window.addEventListener("scroll", function() {
     let len = section.length;
-    while (--len && window.scrollY + 95 < section[len].offsetTop) {}
+    while (--len && window.scrollY + 120 < section[len].offsetTop) {}
     menuli.forEach(sec => sec.classList.remove("active"));
     menuli[len].classList.add("active");
 });
