@@ -10,15 +10,14 @@
 
 :root {
     --text-color: #f5f5f5;
-    --hover-color: #12f7ff;
+    --hover-color: #39ff14;
     --bg-color: #121212;
-    /* hard to choose the color hehe btw color: #121212  #03001C*/
+    /* hard to choose the color XD btw color: #121212  #03001C*/
     --secon-bg-color: #292e33;
     --big-font: 2.5rem;
     --normal-font: 2rem;
-    --neon-box-shadow: 0 0 0.5rem #12f7ff;
+    --neon-box-shadow: 0 0 0.5rem #39ff14;
     --h2-font-size: 3rem;
-    --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.6), 0 0 20px rgba(18, 247, 255, 0.6), 0 0 30px rgba(18, 247, 255, 0.6), 0 0 40px rgba(18, 247, 255, 0.6), 0 0 50px rgba(18, 247, 255, 0.6), 0 0 60px rgba(18, 247, 255, 0.6), 0 0 70px rgba(18, 247, 255, 0.6), 0 0 80px rgba(18, 247, 255, 0.6), 0 0 100px rgba(18, 247, 255, 0.6), 0 0 150px rgba(18, 247, 255, 0.6),
 }
 
 body {
@@ -71,11 +70,27 @@ span {
 
 .nav-list a:hover {
     color: var(--hover-color);
-    text-shadow: 0 0 10px rgba(18, 247, 255, 0.3), 0 0 20px rgba(18, 247, 255, 0.3), 0 0 30px rgba(18, 247, 255, 0.3), 0 0 40px rgba(18, 247, 255, 0.3), 0 0 50px rgba(18, 247, 255, 0.3), 0 0 60px rgba(18, 247, 255, 0.3), 0 0 70px rgba(18, 247, 255, 0.3), 0 0 80px rgba(18, 247, 255, 0.3), 0 0 100px rgba(18, 247, 255, 0.3), 0 0 150px rgba(18, 247, 255, 0.3);
+    text-shadow: var(--neon-box-shadow);
 }
 
 .nav-list .active {
     color: var(--hover-color);
+    text-shadow: var(--neon-box-shadow);
+}
+
+.togg {
+    font-size: 1.4rem;
+    background: none;
+    color: white;
+    border: none;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.togg:hover {
+    color: var(--hover-color);
+    text-shadow: var(--neon-box-shadow);
 }
 
 #menu-icon {
@@ -182,7 +197,7 @@ section {
     letter-spacing: 1px;
     font-weight: 600;
     transition: .6s;
-    box-shadow: 0 0 10px rgba(18, 247, 255, 0.05), 0 0 20px rgba(18, 247, 255, 0.05), 0 0 30px rgba(18, 247, 255, 0.05), 0 0 40px rgba(18, 247, 255, 0.05), 0 0 50px rgba(18, 247, 255, 0.05), 0 0 60px rgba(18, 247, 255, 0.05), 0 0 70px rgba(18, 247, 255, 0.05), 0 0 80px rgba(18, 247, 255, 0.05), 0 0 100px rgba(18, 247, 255, 0.05), 0 0 150px rgba(18, 247, 255, 0.05);
+    box-shadow: var(--neon-box-shadow);
     border-radius: 5px;
     position: relative;
     overflow: hidden;
@@ -386,22 +401,49 @@ about-content p {
 
 .skill-bar .bar .html {
     width: 70%;
+<<<<<<< HEAD
     animation: html 11s;
+=======
+    animation: html 10s;
+>>>>>>> 1ebc5af (changes)
 }
 
 .skill-bar .bar .css {
     width: 60%;
+<<<<<<< HEAD
     animation: css 11.5s;
+=======
+    animation: css 10.1s;
+>>>>>>> 1ebc5af (changes)
 }
 
 .skill-bar .bar .javascript {
     width: 40%;
+<<<<<<< HEAD
     animation: javascript 12s;
 }
 
 .skill-bar .bar .cpp {
     width: 60%;
     animation: cpp 11.5s;
+=======
+    animation: javascript 10.2s;
+}
+
+.skill-bar .bar .cpp {
+    width: 50%;
+    animation: cpp 11s;
+}
+
+.skill-bar .bar .nodejs {
+    width: 30%;
+    animation: cpp 12s;
+}
+
+.skill-bar .bar .expressjs {
+    width: 20%;
+    animation: cpp 12s;
+>>>>>>> 1ebc5af (changes)
 }
 
 
@@ -426,7 +468,7 @@ about-content p {
 
 .filter-buttons .btn:hover {
     color: var(--hover-color);
-    box-shadow: 0 0 5px rgba(18, 247, 255, 0.05), 0 0 20px rgba(18, 247, 255, 0.05), 0 0 30px rgba(18, 247, 255, 0.05), 0 0 40px rgba(18, 247, 255, 0.05), 0 0 50px rgba(18, 247, 255, 0.05), 0 0 60px rgba(18, 247, 255, 0.05), 0 0 70px rgba(18, 247, 255, 0.05), 0 0 80px rgba(18, 247, 255, 0.05), 0 0 100px rgba(18, 247, 255, 0.05), 0 0 150px rgba(18, 247, 255, 0.05);
+    text-shadow: var(--neon-box-shadow);
 }
 
 .filter-buttons .active {
@@ -473,7 +515,7 @@ about-content p {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .2), #12f7ff);
+    background: linear-gradient(rgba(0, 0, 0, .2), black);
     opacity: 0;
     align-items: center;
     justify-content: center;
@@ -506,11 +548,12 @@ about-content p {
 
 .port-box:hover .port-image img {
     transform: scale(1.2);
+    opacity: .2;
 }
 
 .port-content a i {
     font-size: 1.32rem;
-    color: var(--bg-color);
+    color: white;
 }
 
 
@@ -534,7 +577,6 @@ about-content p {
     color: var(--text-color);
     background: var(--bg-color);
     margin-bottom: .7rem;
-    border: none;
     border-radius: 5px;
     padding: .7rem;
 }
@@ -623,13 +665,13 @@ footer a {
     }
      :root {
         --text-color: #f5f5f5;
-        --hover-color: #12f7ff;
+        --hover-color: #39ff14;
         --bg-color: #121212;
         /* hard to choose the color hehe btw color: #121212  #03001C*/
         --secon-bg-color: #292e33;
         --big-font: 2.2rem;
         --normal-font: 1.8rem;
-        --neon-box-shadow: 0 0 0.8rem #12f7ff;
+        --neon-box-shadow: 0 0 0.5rem #39ff14;
         --h2-font-size: 3rem;
         --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.6), 0 0 20px rgba(18, 247, 255, 0.6), 0 0 30px rgba(18, 247, 255, 0.6), 0 0 40px rgba(18, 247, 255, 0.6), 0 0 50px rgba(18, 247, 255, 0.6), 0 0 60px rgba(18, 247, 255, 0.6), 0 0 70px rgba(18, 247, 255, 0.6), 0 0 80px rgba(18, 247, 255, 0.6), 0 0 100px rgba(18, 247, 255, 0.6), 0 0 150px rgba(18, 247, 255, 0.6),
     }
@@ -642,6 +684,10 @@ footer a {
 }
 
 @media(max-width:768px) {
+    .togg {
+        margin-right: -50%;
+        font-size: 1.9rem;
+    }
     #menu-icon {
         display: block;
         transition: all .3s ease;
@@ -686,7 +732,18 @@ footer a {
     }
 }
 
-@media(max-width:420px) {
+@media(max-width:505px) {
+    .togg {
+        margin-right: -40%;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:476px) {
+    .togg {
+        margin-right: -40%;
+        font-size: 2rem;
+    }
     html {
         font-size: 81%;
     }
@@ -697,8 +754,12 @@ footer a {
     .filter-buttons .btn {
         font-size: .82rem;
     }
+<<<<<<< HEAD
 
     .contact{
+=======
+    .contact {
+>>>>>>> 1ebc5af (changes)
         height: 75vh;
     }
     footer {
@@ -739,5 +800,26 @@ footer a {
     }
     100% {
         width: 60%
+<<<<<<< HEAD
+=======
+    }
+}
+
+@keyframes nodejs {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 30%
+    }
+}
+
+@keyframes expressjs {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 20%
+>>>>>>> 1ebc5af (changes)
     }
 }

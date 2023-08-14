@@ -1,3 +1,15 @@
+const colorToggle = document.getElementById('color-toggle');
+const root = document.documentElement;
+
+colorToggle.addEventListener('click', () => {
+    // Toggle between neon green and blue
+    if (root.style.getPropertyValue('--hover-color') === '#39ff14') {
+        root.style.setProperty('--hover-color', '#12f7ff');
+        // Change to neon blue
+    } else {
+        root.style.setProperty('--hover-color', '#39ff14'); // Change to neon green
+    }
+});
 //filtering projects//
 var mixer = mixitup('.project-gallery');
 //reveal transition//
