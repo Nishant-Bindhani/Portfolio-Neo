@@ -401,32 +401,16 @@ about-content p {
 
 .skill-bar .bar .html {
     width: 70%;
-<<<<<<< HEAD
-    animation: html 11s;
-=======
     animation: html 10s;
->>>>>>> 1ebc5af (changes)
 }
 
 .skill-bar .bar .css {
     width: 60%;
-<<<<<<< HEAD
-    animation: css 11.5s;
-=======
     animation: css 10.1s;
->>>>>>> 1ebc5af (changes)
 }
 
 .skill-bar .bar .javascript {
     width: 40%;
-<<<<<<< HEAD
-    animation: javascript 12s;
-}
-
-.skill-bar .bar .cpp {
-    width: 60%;
-    animation: cpp 11.5s;
-=======
     animation: javascript 10.2s;
 }
 
@@ -443,7 +427,6 @@ about-content p {
 .skill-bar .bar .expressjs {
     width: 20%;
     animation: cpp 12s;
->>>>>>> 1ebc5af (changes)
 }
 
 
@@ -754,12 +737,7 @@ footer a {
     .filter-buttons .btn {
         font-size: .82rem;
     }
-<<<<<<< HEAD
-
-    .contact{
-=======
     .contact {
->>>>>>> 1ebc5af (changes)
         height: 75vh;
     }
     footer {
@@ -800,8 +778,6 @@ footer a {
     }
     100% {
         width: 60%
-<<<<<<< HEAD
-=======
     }
 }
 
@@ -820,6 +796,5 @@ footer a {
     }
     100% {
         width: 20%
->>>>>>> 1ebc5af (changes)
     }
 }
