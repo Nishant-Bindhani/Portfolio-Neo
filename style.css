@@ -421,12 +421,12 @@ about-content p {
 
 .skill-bar .bar .nodejs {
     width: 30%;
-    animation: cpp 12s;
+    animation: nodejs 12s;
 }
 
 .skill-bar .bar .expressjs {
     width: 20%;
-    animation: cpp 12s;
+    animation: expressjs 12s;
 }
 
 
