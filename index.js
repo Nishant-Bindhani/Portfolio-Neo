@@ -78,3 +78,38 @@ window.onscroll = () => {
     menubtn.classList.remove("ri-close-fill");
     navlist.classList.remove("open");
 }
+
+
+
+
+const quoteElement = document.getElementById("quote");
+const authorElement = document.getElementById("author");
+const btn = document.getElementById("btn");
+
+const url = "https://api.quotable.io/random";
+
+const displayQuote = async (content, author) => {
+  quoteElement.style.opacity = 0;
+  authorElement.style.opacity = 0;
+
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  quoteElement.innerText =content;
+  authorElement.innerText =`~ ${author}`;
+  quoteElement.style.opacity = 1;
+  authorElement.style.opacity = .7;
+};
+setInterval(async function getQuote() {
+  const response = await fetch(url);
+  const data = await response.json();
+  displayQuote(data.content, data.author);
+
+},7000);
+const getQuote = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayQuote(data.content, data.author);
+  
+};
+
+window.addEventListener("load", getQuote);
+btn.addEventListener("click", getQuote);

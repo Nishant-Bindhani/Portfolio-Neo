@@ -223,9 +223,28 @@ section {
 .btn:hover::before {
     width: 100%;
 }
-
+.container {
+    background:var(--bg-color);
+    margin: 30px 25px 15px 0;
+    text-align: center;
+    position: fixed;
+  }
+  .container p {
+    color:var(--text-color);
+  }
+  .container h3 {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.5;
+  }
+  
+  .container p ,.container h3{ 
+    transition: opacity 0.6s ease; 
+  }
+  
 .social {
-    margin-top: 7rem;
+    margin-top: 13rem;
 }
 
 .social-icons {
@@ -427,6 +446,60 @@ about-content p {
 .skill-bar .bar .expressjs {
     width: 20%;
     animation: expressjs 12s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 70%
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 60%
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 40%
+    }
+}
+
+@keyframes cpp {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 60%
+    }
+}
+
+@keyframes nodejs {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 30%
+    }
+}
+
+@keyframes expressjs {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 20%
+    }
 }
 
 
@@ -650,7 +723,6 @@ footer a {
         --text-color: #f5f5f5;
         --hover-color: #39ff14;
         --bg-color: #121212;
-        /* hard to choose the color hehe btw color: #121212  #03001C*/
         --secon-bg-color: #292e33;
         --big-font: 2.2rem;
         --normal-font: 1.8rem;
