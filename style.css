@@ -224,6 +224,26 @@ section {
     width: 100%;
 }
 
+.container {
+    background:var(--bg-color);
+    margin: 30px 25px 15px 0;
+    text-align: center;
+    position: fixed;
+  }
+  .container p {
+    color:var(--text-color);
+  }
+  .container h3 {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.5;
+  }
+  
+  .container p ,.container h3{ 
+    transition: opacity 0.6s ease; 
+  }
+
 .social {
     margin-top: 13rem;
 }
